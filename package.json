@@ -2,10 +2,13 @@
   "name": "weather-cli",
   "version": "1.0.0",
   "description": "weather",
-  "main": "index.js",
-  "bin": "./index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "node weather.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,13 +17,18 @@
   ],
   "author": "Vitaly",
   "license": "ISC",
-  "homepage": "https://yandex.ru",
+  "homepage": "https://github.com/vitaly-97",
   "repository": {
     "type": "git",
-    "url": "yandex.ru"
+    "url": "https://github.com/vitaly-97"
   },
   "bugs": {
-    "url": "https://yandex.ru",
+    "url": "https://github.com/vitaly-97",
     "email": "vitamin1551@mail.ru"
+  },
+  "dependencies": {
+    "axios": "^0.21.4",
+    "chalk": "^5.2.0",
+    "dedent-js": "^1.0.1"
   }
 }
